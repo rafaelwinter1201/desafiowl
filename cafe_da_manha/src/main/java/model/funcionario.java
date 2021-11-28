@@ -1,5 +1,7 @@
 package model;
 
+import java.util.ArrayList;
+
 import dao.FuncionarioDAO;
 
 public class funcionario {
@@ -36,6 +38,10 @@ public class funcionario {
 	
 	public void salvar() {
 		new FuncionarioDAO().cadastraFuncionario(this);
+	}
+	
+	public ArrayList<funcionario> BuscaFuncionario () {
+		return new FuncionarioDAO().BuscaFuncionario();
 	}
 	
 }

@@ -20,12 +20,15 @@
 	}
 	.larguracard{
 		width: 40%;
-		vertical-align: middle;
 		margin: auto;
 	}
  	
 }
-.teste{
-	background-color: red;
+.botao{
+	margin-bottom: 2%;
+	width: 40%;
+}
+.wcem{
 	width: 100%;
+	text-align: center;
 }

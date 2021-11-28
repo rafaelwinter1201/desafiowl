@@ -49,10 +49,18 @@
 			    </tr>
 			  </thead>
 			  <tr>
-			      <td colspan="3" class="text-center">NOT FOUND ITEMS</td>
-			    </tr>
+			      <%
+					String mensagem = null;
+					mensagem = (String) request.getAttribute("mensagem");
+					if (mensagem!=null)
+						out.print(mensagem);
+				  %>
+			  </tr>
 			</table>
 		  </div>
+		  <form method="post" action="buscaFuncionario" class="wcem">
+		  	<button type="submit" class="btn btn-outline-secondary pt-2 pb-2 botao">Buscar</button>
+		  	</form>
 		</article>
 	</section>
 
