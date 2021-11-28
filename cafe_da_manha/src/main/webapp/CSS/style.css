@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+.largurabotao{
+	max-width: 400px;
+	vertical-align: middle;
+}
+
+@media (pointer: coarse) {
+	.larguracard{
+		vertical-align: middle;
+		margin: auto;
+	}
+}
+@media (pointer: fine) {
+	@media (max-width: 720px) {
+		.larguracard{
+			vertical-align: middle !important;
+			margin: auto !important;
+		}
+	}
+	.larguracard{
+		width: 40%;
+		vertical-align: middle;
+		margin: auto;
+	}
+ 	
+}
+.teste{
+	background-color: red;
+	width: 100%;
+}
